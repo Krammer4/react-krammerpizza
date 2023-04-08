@@ -283,7 +283,7 @@ function App() {
      <ul className="navbar">
         <div className="navbar-row">
          <div className="navbar-group">
-            <Link className="navbar-link" to="/react-dodo">Главная</Link>
+            <Link className="navbar-link" to="/react-krammerpizza">Главная</Link>
             <Link className="navbar-link" to="/pizza">Пицца</Link>
             <Link className="navbar-link" to="/combo">Комбо</Link>
             <Link className="navbar-link" to="/snacks">Закуски</Link>
@@ -553,7 +553,7 @@ function App() {
       }}>
     <Routes>
       
-        <Route path="/react-dodo" element={<Main/>}/>
+        <Route path="/react-krammerpizza" element={<Main/>}/>
         <Route path="/pizza" element={<Pizza/>}/>
         <Route path="/combo" element={<Combo/>}/>
         <Route path="/snacks" element={<Snacks/>}/>
