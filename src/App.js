@@ -59,6 +59,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 export const Context = React.createContext()
 
 function App() {
+
+
   const [sign, setSign] = useState(false)
   const [phone, setPhone] = useState('+375')
   const [yourRegPhone, setYourRegPhone] = useState('')
@@ -215,6 +217,18 @@ function App() {
     })
     console.log('Сумма заказа:', Math.ceil((finalSumm)*100)/100)
   }
+
+  useEffect(()=>{
+    const cartStorageData = JSON.parse(localStorage.getItem('cart'))
+    if(cartStorageData){
+      setCartList(cartStorageData)
+    }
+
+  },[])
+
+  useEffect(()=>{
+    localStorage.setItem('cart', JSON.stringify(cartList))
+  },[cartList])
 
   
   // States for inputs with card information

@@ -40,17 +40,19 @@ export const Header = ({sign, setSign, phone, setPhone,  yourRegPhone, setYourRe
     }
 
 
-    
+    useEffect(()=>{
+        const yourTownData = localStorage.getItem('yourTown')
+       if(yourTownData){
+        setYourTown(JSON.parse(yourTownData))
+       }
+        
+    },[])
 
     useEffect(()=>{
-       window.localStorage.setItem('yourTown', JSON.stringify(yourTown))
+       localStorage.setItem('yourTown', JSON.stringify(yourTown))
     }, [yourTown])
 
-    useEffect(()=>{
-        const yourTownData = window.localStorage.getItem('yourTown')
-       setYourTown(JSON.parse(yourTownData))
-       return localStorage.clear
-    },[])
+    
    
 // State for exit button appearing
     const [exit, setExit] = useState(false)
