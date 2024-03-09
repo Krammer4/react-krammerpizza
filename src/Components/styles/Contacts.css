@@ -1,0 +1,44 @@
+.contacts-point {
+  font-family: 'Comfortaa';
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 6px;
+}
+.contacts-content {
+  font-size: 22px;
+  margin-top: -20px;
+  color: #ff6900;
+}
+.contacts-towns-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contacts-townCard {
+  /* border: 1px dashed #ff6900; */
+  border-radius: 16px;
+  flex: 0 0 20%;
+  /* margin-bottom: 20px; */
+  margin-top: 20px;
+}
+.contacts-townCard-content {
+  padding: 10px 20px;
+}
+.contacts-townCard-title {
+  font-family: 'Comfortaa';
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 0%;
+}
+.contacts-townCard-stars {
+  font-family: 'Comfortaa';
+  font-size: 18px;
+}
+.contacts-starsRow {
+  display: flex;
+  align-items: center;
+}
+.contacts-townCard-star {
+  width: 20px;
+  margin-left: 10px;
+}

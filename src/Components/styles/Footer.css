@@ -1,0 +1,30 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+.footer {
+  border-top: 2px dashed #acacac;
+}
+.footer-container {
+  padding: 20px 0px;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+.footer-column-title {
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer-column-link {
+  font-family: 'Comfortaa';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}

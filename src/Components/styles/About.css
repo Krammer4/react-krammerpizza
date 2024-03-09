@@ -1,0 +1,34 @@
+.about {
+}
+.about-container {
+}
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about-row:not(:last-child) {
+  border-bottom: 1px dashed #aaaaaa;
+  padding-bottom: 40px;
+}
+.about-image {
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.about-subtitle {
+  max-width: 700px;
+  font-family: 'Comfortaa';
+  font-size: 22px;
+}
+.about-subtitle.right {
+  text-align: right;
+}
+.about-subtitle.left {
+  text-align: left;
+}
+.about-orange-span {
+  color: #ff6900;
+}
