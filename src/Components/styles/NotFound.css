@@ -1,0 +1,24 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notFound-title {
+  font-family: 'Comfortaa';
+  font-size: 38px;
+  font-weight: 900;
+}
+.notFound-subtitle {
+  font-family: 'Comfortaa';
+  font-size: 28px;
+  font-weight: 600;
+}
+.notFound-action {
+  font-family: 'Comfortaa';
+  font-size: 18px;
+}
+.notFound-link {
+  color: #ff6900;
+  font-weight: 900;
+}

@@ -55,6 +55,7 @@ import cross from './Img/cross.png';
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { Footer } from './Components/Footer';
+import { NotFound } from './Components/NotFound';
 
 export const Context = React.createContext();
 
@@ -1264,6 +1265,7 @@ function App() {
               <Route path='/discounts' element={<Discounts />} />
               <Route path='/contacts' element={<Contacts />} />
               <Route path='/about' element={<About />} />
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </Context.Provider>
         </div>

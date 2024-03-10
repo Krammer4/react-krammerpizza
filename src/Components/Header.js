@@ -4,6 +4,7 @@ import star from '../Img/star.png';
 import miniLogo from '../Img/mini-logo.jpg';
 import cross from '../Img/cross.png';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export const Header = ({
   sign,
@@ -65,9 +66,16 @@ export const Header = ({
     <div className='header'>
       <div className='header-row'>
         <div className='header-sec-row'>
-          <h2 style={{ fontFamily: 'Comfortaa', marginRight: '20px' }}>
+          <Link
+            to='/react-krammerpizza'
+            style={{
+              fontFamily: 'Comfortaa',
+              marginRight: '20px',
+              fontWeight: 800,
+            }}
+          >
             KPizza
-          </h2>
+          </Link>
           <div className='header__delivety delivery'>
             <p className='delivery-text'>
               <span className='delivery-addition-text'>Доставка пиццы</span>{' '}
