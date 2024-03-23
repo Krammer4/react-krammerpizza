@@ -32,3 +32,20 @@
 .about-orange-span {
   color: #ff6900;
 }
+
+@media (max-width: 1538px) {
+  .about-image {
+    width: 500px;
+  }
+  .about-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1310px) {
+  .about-image {
+    width: 300px;
+  }
+  .about-subtitle {
+  }
+}

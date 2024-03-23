@@ -19,3 +19,10 @@ export const allTowns = [
   { title: 'Слоним', id: 17, rate: 4.35 },
   { title: 'Слуцк', id: 18, rate: 4.15 },
 ];
+
+export const filters = {
+  chicken: 'Курица',
+  ham: 'Ветчина',
+  mashrooms: 'Грибы',
+  bacon: 'Бекон',
+};

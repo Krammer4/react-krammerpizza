@@ -56,6 +56,7 @@ import cross from './Img/cross.png';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Footer } from './Components/Footer';
 import { NotFound } from './Components/NotFound';
+import { filters } from './consts';
 
 export const Context = React.createContext();
 
@@ -104,6 +105,7 @@ function App() {
       carbo: '28.6 г',
       ingredients:
         'Томатный соус, цыпленок филе, пикантная пепперони, красный лук, моцарелла, бекон',
+      filter: [filters.chicken, filters.bacon],
     },
     {
       title: 'Пепперони с грибами',
@@ -118,6 +120,7 @@ function App() {
       fat: '11.4 г',
       carbo: '33.5 г',
       ingredients: 'Пикантная пепперони, моцарелла, шампиньоны, соус альфредо',
+      filter: [filters.mashrooms],
     },
     {
       title: 'Цыпленок карри',
@@ -133,6 +136,7 @@ function App() {
       carbo: '27.3 г',
       ingredients:
         'Цыпленок, ананасы, соус карри, красный лук, сладкий перец, моцарелла, томатный соус',
+      filter: [filters.chicken],
     },
     {
       title: 'Домашняя',
@@ -148,6 +152,7 @@ function App() {
       carbo: '27.1 г',
       ingredients:
         'Пикантная пепперони, ветчина, маринованные огурчики, томаты, моцарелла, томатный соус',
+      filter: [filters.ham],
     },
     {
       title: 'Четыре сезона',
@@ -163,6 +168,7 @@ function App() {
       carbo: '26.8 г',
       ingredients:
         'Итальянские травы, томатный соус, томаты, пикантная пепперони, кубики брынзы, моцарелла, ветчина, шампиньоны',
+      filter: [filters.ham, filters.mashrooms],
     },
     {
       title: 'Карбонара',
@@ -178,6 +184,7 @@ function App() {
       carbo: '28.7 г',
       ingredients:
         'Бекон, сыры чеддер и пармезан, моцарелла, томаты, соус альфредо, красный лук, чеснок, итальянские травы',
+      filter: [filters.bacon],
     },
     {
       title: 'Деревенская',
@@ -193,6 +200,7 @@ function App() {
       carbo: '27 г',
       ingredients:
         'Картофель из печи, маринованные огурчики, цыпленок, соус ранч, томаты, красный лук, чеснок, моцарелла, томатный соус',
+      filter: [filters.chicken],
     },
     {
       title: 'Додо Микс',
@@ -208,6 +216,7 @@ function App() {
       carbo: '27.3 г',
       ingredients:
         'Бекон, цыпленок, ветчина, сыры чеддер и пармезан, соус песто, кубики брынзы, томаты, красный лук, моцарелла, соус альфредо, чеснок, итальянские травы',
+      filter: [filters.chicken, filters.bacon],
     },
     {
       title: 'Ветчина и огурчики',
@@ -223,6 +232,7 @@ function App() {
       carbo: '32.5 г',
       ingredients:
         'Соус ранч, моцарелла, ветчина, маринованные огурчики, красный лук',
+      filter: [filters.ham],
     },
     {
       title: 'Бургер-пицца',
@@ -238,6 +248,7 @@ function App() {
       carbo: '32.5 г',
       ingredients:
         'Томатный соус, моцарелла, ветчина, красный лук, томаты, маринованные огурчики, соус бургер, чеснок',
+      filter: [filters.ham],
     },
     {
       title: 'Аррива!',
@@ -253,6 +264,7 @@ function App() {
       carbo: '30.4 г',
       ingredients:
         'Цыпленок, чоризо, соус бургер, томаты, сладкий перец, лук красный, чеснок, моцарелла, соус ранч',
+      filter: [filters.chicken],
     },
     {
       title: 'Додо',
@@ -268,6 +280,7 @@ function App() {
       carbo: '25.1 г',
       ingredients:
         'Бекон, митболы из говядины, пикантная пепперони, моцарелла, томаты, шампиньоны, сладкий перец, красный лук, чеснок, томатный соус',
+      filter: [filters.bacon, filters.ham, filters.mashrooms],
     },
     {
       title: 'Пепперони',
@@ -282,6 +295,7 @@ function App() {
       fat: '10.4 г',
       carbo: '30.9 г',
       ingredients: 'Томатный соус, пикантная пепперони, моцарелла',
+      filter: [filters.ham],
     },
     {
       title: 'Песто',
@@ -297,6 +311,7 @@ function App() {
       carbo: '27.8 г',
       ingredients:
         'Соус песто, соус альфредо, цыплёнок, кубики брынзы, томаты, моцарелла',
+      filter: [filters.chicken],
     },
     {
       title: 'Цыпленок ранч',
@@ -312,6 +327,7 @@ function App() {
       carbo: '26.6 г',
       ingredients:
         'Цыпленок, томаты, чеснок сухой, моцарелла, соус ранч, ветчина',
+      filter: [filters.chicken],
     },
     {
       title: 'Цыпленок барбекю',
@@ -327,6 +343,7 @@ function App() {
       carbo: '28.4 г',
       ingredients:
         'Соус барбекю, томатный соус, цыпленок, красный лук, моцарелла, бекон',
+      filter: [filters.chicken, filters.bacon],
     },
   ]);
 
