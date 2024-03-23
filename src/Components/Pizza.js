@@ -46,66 +46,137 @@ export const Pizza = () => {
   };
 
   const [filterValue, setFilterValue] = useState('Фильтр');
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorFilterEl, setAnchorFilterEl] = useState(null);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-    console.log(event.currentTarget);
+  const handleFilterClick = (event) => {
+    setAnchorFilterEl(event.currentTarget);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
+  const handleFilterClose = () => {
+    setAnchorFilterEl(null);
   };
 
-  const open = Boolean(anchorEl);
-  const id = open ? 'simple-popover' : undefined;
+  const openFilter = Boolean(anchorFilterEl);
+  const idFilter = openFilter ? 'simple-popover' : undefined;
+
+  const [sortValue, setSortValue] = useState('Сортировка');
+
+  const [anchorSortEl, setAnchorSortEl] = useState(null);
+
+  const handleSortClick = (event) => {
+    setAnchorSortEl(event.currentTarget);
+  };
+
+  const handleSortClose = () => {
+    setAnchorSortEl(null);
+  };
+
+  const openSort = Boolean(anchorSortEl);
+  const idSort = openSort ? 'simple-popover' : undefined;
+
+  const sortPizzas = (sortVal) => {
+    let sortedPizzas;
+    if (sortVal) {
+      sortedPizzas = pizzasToShow.sort((a, b) => a.startPrice - b.startPrice);
+    } else {
+      sortedPizzas = pizzasToShow.sort((a, b) => b.startPrice - a.startPrice);
+    }
+    setPizzasToShow(sortedPizzas);
+  };
 
   return (
     <div className='pizzas'>
       <h1 className='pizzas-main-title'>Пицца</h1>
-      <div>
-        <button className='filter-open-button' onClick={handleClick}>
-          {filterValue}
-        </button>
-        <Popover
-          id={id}
-          open={open}
-          anchorEl={anchorEl}
-          onClose={handleClose}
-          anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'left',
-          }}
-        >
-          <Typography sx={{ p: 2 }}>
-            <div className='filterButtonsRow'>
-              <button
-                onClick={() => {
-                  setFilterValue('Фильтр');
-                  filterPizzas('');
-                  handleClose();
-                }}
-                className='filterButton'
-              >
-                Все
-              </button>
-              {Object.values(filters).map((el) => {
-                return (
-                  <button
-                    onClick={() => {
-                      setFilterValue(el);
-                      filterPizzas(el);
-                      handleClose();
-                    }}
-                    className='filterButton'
-                  >
-                    {el}
-                  </button>
-                );
-              })}
-            </div>
-          </Typography>
-        </Popover>
+      <div className='pizzas-sortFilter-row'>
+        <div>
+          <button className='filter-open-button' onClick={handleFilterClick}>
+            {filterValue}
+          </button>
+          <Popover
+            id={idFilter}
+            open={openFilter}
+            anchorEl={anchorFilterEl}
+            onClose={handleFilterClose}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+          >
+            <Typography sx={{ p: 2 }}>
+              <div className='filterButtonsRow'>
+                <button
+                  onClick={() => {
+                    setFilterValue('Фильтр');
+                    filterPizzas('');
+                    handleFilterClose();
+                  }}
+                  className='filterButton'
+                >
+                  Все
+                </button>
+                {Object.values(filters).map((el) => {
+                  return (
+                    <button
+                      onClick={() => {
+                        setFilterValue(el);
+                        filterPizzas(el);
+                        handleFilterClose();
+                      }}
+                      className='filterButton'
+                    >
+                      {el}
+                    </button>
+                  );
+                })}
+              </div>
+            </Typography>
+          </Popover>
+        </div>
+
+        <div>
+          <button
+            style={{ marginLeft: '20px' }}
+            className='filter-open-button'
+            onClick={handleSortClick}
+          >
+            {sortValue}
+          </button>
+          <Popover
+            id={idSort}
+            open={openSort}
+            anchorEl={anchorSortEl}
+            onClose={handleSortClose}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+          >
+            <Typography sx={{ p: 2 }}>
+              <div className='filterButtonsRow'>
+                <button
+                  onClick={() => {
+                    setSortValue('По возрастанию цены');
+                    sortPizzas(true);
+                    handleSortClose();
+                  }}
+                  className='filterButton'
+                >
+                  По возрастанию цены
+                </button>
+                <button
+                  onClick={() => {
+                    setSortValue('По убыванию цены');
+                    sortPizzas(false);
+                    handleSortClose();
+                  }}
+                  className='filterButton'
+                >
+                  По убыванию цены
+                </button>
+              </div>
+            </Typography>
+          </Popover>
+        </div>
       </div>
 
       <div className='pizzas-row'>

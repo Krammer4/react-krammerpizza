@@ -1,7 +1,10 @@
+.pizzas-sortFilter-row {
+  display: flex;
+  margin-bottom: 20px;
+}
 .filter-open-button {
   background: none;
   border: none;
-  margin-bottom: 20px;
   cursor: pointer;
   font-size: 18px;
   font-family: 'Comfortaa';
