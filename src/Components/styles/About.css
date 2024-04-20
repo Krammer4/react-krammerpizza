@@ -33,6 +33,21 @@
   color: #ff6900;
 }
 
+.about-plus-title {
+  font-family: 'Comfortaa';
+  font-size: 28px;
+}
+.about-pluses-list {
+  width: 100%;
+}
+.about-plus {
+  /* color: #ff6900; */
+  font-size: 18px;
+}
+.about-plus:not(:first-child) {
+  padding-top: 20px;
+}
+
 @media (max-width: 1538px) {
   .about-image {
     width: 500px;

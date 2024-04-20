@@ -3,7 +3,7 @@ import './App.css';
 import { Header } from './Components/Header';
 import { Pizza } from './Components/Pizza';
 import { Main } from './Components/Main';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import { Snacks } from './Components/Snacks';
 import { Combo } from './Components/Combo';
 import { Desserts } from './Components/Desserts';
@@ -57,6 +57,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Footer } from './Components/Footer';
 import { NotFound } from './Components/NotFound';
 import { filters } from './consts';
+import  News  from './Components/News.jsx';
+import { Gallery } from './Components/Gallery.jsx';
 
 export const Context = React.createContext();
 
@@ -762,36 +764,62 @@ function App() {
           <ul className='navbar'>
             <div className='navbar-row'>
               <div className='navbar-group'>
-                <Link className='navbar-link' to='/react-krammerpizza'>
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/react-krammerpizza'
+                >
                   Главная
-                </Link>
-                <Link className='navbar-link' to='/pizza'>
+                </NavLink>
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/pizza'
+                >
                   Пицца
-                </Link>
-                <Link className='navbar-link' to='/combo'>
+                </NavLink>
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/combo'
+                >
                   Комбо
-                </Link>
-                <Link className='navbar-link' to='/snacks'>
+                </NavLink>
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/snacks'
+                >
                   Закуски
-                </Link>
-                <Link className='navbar-link' to='/desserts'>
-                  Дессерты
-                </Link>
-                <Link className='navbar-link' to='/drinks'>
-                  Напитки
-                </Link>
-                <Link className='navbar-link' to='/other'>
-                  Другие товары
-                </Link>
-                <Link className='navbar-link' to='/discounts'>
-                  Акции
-                </Link>
-                <Link className='navbar-link' to='/contacts'>
+                </NavLink>
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/gallery'
+                >
+                  Галлерея
+                </NavLink>
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/news'
+                >
+                  Новости
+                </NavLink>
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/contacts'
+                >
                   Контакты
-                </Link>
-                <Link className='navbar-link' to='/about'>
+                </NavLink>  
+                <NavLink
+                  activeClassName='navbar-link active'
+                  className='navbar-link'
+                  to='/about'
+                >
                   О нас
-                </Link>
+                </NavLink>
               </div>
               <p
                 onClick={() => {
@@ -1276,10 +1304,9 @@ function App() {
               <Route path='/pizza' element={<Pizza />} />
               <Route path='/combo' element={<Combo />} />
               <Route path='/snacks' element={<Snacks />} />
-              <Route path='/desserts' element={<Desserts />} />
-              <Route path='/drinks' element={<Drinks />} />
-              <Route path='/other' element={<Other />} />
+              <Route path='/news' element={<News />} />
               <Route path='/discounts' element={<Discounts />} />
+              <Route path='/gallery' element={<Gallery />} />
               <Route path='/contacts' element={<Contacts />} />
               <Route path='/about' element={<About />} />
               <Route path='*' element={<NotFound />} />

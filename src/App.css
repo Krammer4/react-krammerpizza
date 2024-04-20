@@ -422,6 +422,9 @@
   font-weight: 700;
   font-size: 14px;
 }
+.navbar-link.active {
+  color: #ff6900;
+}
 .navbar-link:hover {
   color: #ff6900;
 }
@@ -1482,4 +1485,109 @@
 .soon {
   color: #ff6900;
   font-weight: 700;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.news-content {
+  margin-top: 10px;
+}
+
+.news-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.news-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.contacts-reviews {
+  margin-top: 30px;
+}
+
+.contacts-reviews h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+
+
+.contacts-review-form input,
+.contacts-review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 14px;
+  border: 1px solid #000
+}
+
+.contacts-review-form button {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+.contacts-review-form button:hover {
+  background-color: #0056b3;
+}
+.contacts-review-button{
+  width: 100%;
+  color : #ff6900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.contacts-review-card{
+  margin-bottom: 20px;
+}
+.error-message{
+  color: red;
+  font-size: 14px;
+}
+.gallery-container {
+  width: 100%; /* Растягиваем контейнер слайдера на всю доступную ширину */
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide img {
+  max-width: calc(100% - 20px); /* Устанавливаем максимальную ширину изображения с учетом внутренних полей */
+  max-height: 100%; /* Ограничиваем высоту изображения максимальным значением 100% */
+  margin: 0 10px; /* Устанавливаем внутренние поля между изображениями */
+  transition: transform 0.3s ease; /* Добавляем плавный переход при изменении размера */
+  transform-origin: center center; /* Устанавливаем точку преобразования в центр изображения */
+  transform: scale(0.9);
+  border-radius: 10px;
+}
+
+.slick-slide img:hover {
+  transform: scale(1); /* Увеличиваем изображение при наведении на него курсора */
 }

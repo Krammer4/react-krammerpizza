@@ -53,6 +53,17 @@ export const About = () => {
             удовольствия.
           </p>
         </div>
+
+        <div className='about-pluses'>
+          <h2 className='about-plus-title'>Наши конкурентные преимущества:</h2>
+          <ul className='about-pluses-list'>
+            <li className='about-plus'>Быстрая доставка</li>
+            <li className='about-plus'>Широкий выбор</li>
+            <li className='about-plus'>Качество ингредиентов</li>
+            <li className='about-plus'>Удобство заказа</li>
+            <li className='about-plus'>Персонализированный сервис</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
