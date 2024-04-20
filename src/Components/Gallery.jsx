@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import slider1 from '../Img/slider1.jpg'
+import slider1 from '../Img/slider1.jpg' 
 import slider2 from '../Img/slider2.jpg'
 import slider3 from '../Img/slider3.jpg'
 import slider4 from '../Img/slider4.jpg'
@@ -45,14 +45,17 @@ export const Gallery = () => {
       ];
     
       return (
-        <div className="gallery-container">
-          <Slider {...settings}>
-            {images.map((image, index) => (
-              <div key={index}>
-                <img src={image} alt={`Image ${index + 1}`} />
-              </div>
-            ))}
-          </Slider>
-        </div>
+        <>
+        <p className='contacts-point' style={{marginBottom: 20}}>Галлерея</p>
+          <div className="gallery-container">
+            <Slider {...settings}>
+              {images.map((image, index) => (
+                <div key={index}>
+                  <img src={image} alt={`Image ${index + 1}`} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </>
       );
 }

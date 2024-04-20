@@ -1490,10 +1490,11 @@
 .news-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .news-item {
-  width: 300px;
+  width: 400px;
   margin: 10px;
   padding: 10px;
   border: 1px solid #ccc;
