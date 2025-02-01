@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import cross from "../Img/cross.png";
 import info from "../Img/info.jpg";
 import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 export const SnackMenu = ({
   pizzaMenuId,

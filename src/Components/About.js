@@ -5,6 +5,7 @@ import aboutImg3 from "../Img/about3.jpg";
 
 import "./styles/About.css";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export const About = () => {
   return (

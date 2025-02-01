@@ -12,6 +12,7 @@ import { Other } from "./Components/Other";
 import { Discounts } from "./Components/Discounts";
 import { Contacts } from "./Components/Contacts";
 import { About } from "./Components/About";
+import { Helmet } from "react-helmet";
 
 // Pizza images import
 import donbacon from "./Img/pizza1.jpg";

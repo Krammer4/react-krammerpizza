@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { filters } from "../consts";
 import "./styles/Pizza.css";
+import { Helmet } from "react-helmet";
 
 export const Pizza = () => {
   const {
