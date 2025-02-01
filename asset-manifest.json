@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/react-krammerpizza/static/css/main.3975cf48.css",
-    "main.js": "/react-krammerpizza/static/js/main.caf778fb.js",
+    "main.css": "/react-krammerpizza/static/css/main.2b92666e.css",
+    "main.js": "/react-krammerpizza/static/js/main.f62a3e97.js",
     "static/js/787.07ee01be.chunk.js": "/react-krammerpizza/static/js/787.07ee01be.chunk.js",
+    "static/media/slider5.jpg": "/react-krammerpizza/static/media/slider5.06bb9ac47fca4e4729b8.jpg",
+    "static/media/slider2.jpg": "/react-krammerpizza/static/media/slider2.07e3ba0f9891ea253605.jpg",
+    "static/media/slider4.jpg": "/react-krammerpizza/static/media/slider4.b09db22cda3bdadd5542.jpg",
     "static/media/pizza16.jpg": "/react-krammerpizza/static/media/pizza16.ce18791264fb70452aa5.jpg",
     "static/media/pizza6.jpg": "/react-krammerpizza/static/media/pizza6.8ab91acb53037fd08d73.jpg",
     "static/media/pizza11.jpg": "/react-krammerpizza/static/media/pizza11.a3de1bd619e9de207f60.jpg",
     "static/media/pizza7.jpg": "/react-krammerpizza/static/media/pizza7.591de9417e7c766f4151.jpg",
     "static/media/pizza12.jpg": "/react-krammerpizza/static/media/pizza12.93309697159b1d7519cc.jpg",
     "static/media/pizza3.jpg": "/react-krammerpizza/static/media/pizza3.a3cd44d37e5cfbc1c636.jpg",
+    "static/media/slider3.jpg": "/react-krammerpizza/static/media/slider3.ab0d36ad5f48936a6466.jpg",
     "static/media/pizza5.jpg": "/react-krammerpizza/static/media/pizza5.dccaff4df00c579c7b82.jpg",
     "static/media/pizza10.jpg": "/react-krammerpizza/static/media/pizza10.454488a185a379f30dac.jpg",
     "static/media/pizza15.jpg": "/react-krammerpizza/static/media/pizza15.be2e16b8246f1555711e.jpg",
@@ -19,6 +23,7 @@
     "static/media/pizza4.jpg": "/react-krammerpizza/static/media/pizza4.13e1ebc0f2b5e0bda9f9.jpg",
     "static/media/pizza8.jpg": "/react-krammerpizza/static/media/pizza8.14d69b3be847cd1f0306.jpg",
     "static/media/pizza9.jpg": "/react-krammerpizza/static/media/pizza9.766eb2ce87bad10b9cdc.jpg",
+    "static/media/about2.jpg": "/react-krammerpizza/static/media/about2.a2371d40bfebc4296749.jpg",
     "static/media/snack16.jpg": "/react-krammerpizza/static/media/snack16.a2e675c09cc12283c448.jpg",
     "static/media/snack14.jpg": "/react-krammerpizza/static/media/snack14.533919e06ac7521ec5ea.jpg",
     "static/media/snack13.jpg": "/react-krammerpizza/static/media/snack13.3c793d3c2272d735f935.jpg",
@@ -36,16 +41,23 @@
     "static/media/snack6.jpg": "/react-krammerpizza/static/media/snack6.46018e2c52bad55f732d.jpg",
     "static/media/snack10.jpg": "/react-krammerpizza/static/media/snack10.0cfbdbdd426560a1be7b.jpg",
     "static/media/snack15.jpg": "/react-krammerpizza/static/media/snack15.3e7a5c1df0d462cf421a.jpg",
+    "static/media/about1.jpg": "/react-krammerpizza/static/media/about1.9cd01237cd3397ca4eec.jpg",
     "static/media/logo.jpg": "/react-krammerpizza/static/media/logo.79dc66f2ab8f129476f1.jpg",
+    "static/media/slider1.jpg": "/react-krammerpizza/static/media/slider1.4aa1acd1927d998b869e.jpg",
     "static/media/cross.png": "/react-krammerpizza/static/media/cross.9c0f44b21c6a96eb8c63.png",
     "static/media/star.png": "/react-krammerpizza/static/media/star.ffb5c0c3f4d987c229fb.png",
+    "static/media/about3.jpg": "/react-krammerpizza/static/media/about3.593ed03df36171896de9.jpg",
+    "static/media/slick.svg": "/react-krammerpizza/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/react-krammerpizza/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/react-krammerpizza/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/react-krammerpizza/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-krammerpizza/index.html",
-    "main.3975cf48.css.map": "/react-krammerpizza/static/css/main.3975cf48.css.map",
-    "main.caf778fb.js.map": "/react-krammerpizza/static/js/main.caf778fb.js.map",
+    "main.2b92666e.css.map": "/react-krammerpizza/static/css/main.2b92666e.css.map",
+    "main.f62a3e97.js.map": "/react-krammerpizza/static/js/main.f62a3e97.js.map",
     "787.07ee01be.chunk.js.map": "/react-krammerpizza/static/js/787.07ee01be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3975cf48.css",
-    "static/js/main.caf778fb.js"
+    "static/css/main.2b92666e.css",
+    "static/js/main.f62a3e97.js"
   ]
 }
