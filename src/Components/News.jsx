@@ -1,29 +1,28 @@
-import React, { useState } from 'react';
-import news1 from '../Img/slider1.jpg'
-import news2 from '../Img/slider2.jpg'
-import news3 from '../Img/slider3.jpg'
-
+import React, { useState } from "react";
+import news1 from "../Img/slider1.jpg";
+import news2 from "../Img/slider2.jpg";
+import news3 from "../Img/slider3.jpg";
 
 const News = () => {
   const [news, setNews] = useState([
     {
       id: 1,
-      title: 'Новая точка',
-      description: 'Новая точка KrammerPizza в Минске!',
-      imageUrl: news1
+      title: "Новая точка",
+      description: "Новая точка KrammerPizza в Минске!",
+      imageUrl: news1,
     },
     {
       id: 2,
-      title: 'Бешенные скидки!',
-      description: 'Скидки до 50% до конца апреля!',
-      imageUrl: news2
+      title: "Бешенные скидки!",
+      description: "Скидки до 50% до конца апреля!",
+      imageUrl: news2,
     },
     {
-        id: 3,
-        title: 'Вечеринка',
-        description: 'Скидка 10% при заказе столика от 5 человек и более!',
-        imageUrl: news3
-      },
+      id: 3,
+      title: "Вечеринка",
+      description: "Скидка 10% при заказе столика от 5 человек и более!",
+      imageUrl: news3,
+    },
   ]);
 
   const settings = {
@@ -35,29 +34,38 @@ const News = () => {
     autoplay: true, // Автоматическое переключение слайдов
     autoplaySpeed: 2000, // Интервал автоматического переключения в миллисекундах (3 секунды)
     arrows: true, // Отображение стрелок для ручного переключения
-    prevArrow: <button className="gallery-button gallery-button-prev">&lt;</button>, // Кнопка "Назад"
-    nextArrow: <button className="gallery-button gallery-button-next">&gt;</button>, // Кнопка "Вперед"
+    prevArrow: (
+      <button className="gallery-button gallery-button-prev">&lt;</button>
+    ), // Кнопка "Назад"
+    nextArrow: (
+      <button className="gallery-button gallery-button-next">&gt;</button>
+    ), // Кнопка "Вперед"
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2
-        }
-      }
-    ]
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="news-container">
+    <div style={{ marginBottom: 20 }} className="news-container">
       {news.map((item) => (
         <div className="news-item" key={item.id}>
-          <img src={item.imageUrl} alt={item.title} className="news-image" />
+          <img
+            src={item.imageUrl}
+            title={item.title}
+            className="news-image"
+            alt="news image"
+          />
           <div className="news-content">
             <h2 className="news-title">{item.title}</h2>
             <p className="news-description">{item.description}</p>

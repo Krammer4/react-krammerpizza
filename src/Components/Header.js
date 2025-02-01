@@ -5,6 +5,7 @@ import miniLogo from '../Img/mini-logo.jpg';
 import cross from '../Img/cross.png';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Clock from './Clocks';
 
 export const Header = ({
   sign,
@@ -165,26 +166,29 @@ export const Header = ({
             )}
           </AnimatePresence>
         </div>
-
-        {!exit && (
-          <div
-            onClick={() => {
-              new Promise((resolve, reject) => {
-                setSign(!sign);
-
-                resolve();
-              }).then(() => numInput.current.focus());
-            }}
-            className='header-sing'
-          >
-            Войти
-          </div>
-        )}
-        {exit && (
-          <p onClick={() => setExit(false)} className='header-sign-out'>
-            Выйти
-          </p>
-        )}
+        
+       <div style={{display: "flex", alignItems: "center"}}>
+          {!exit && (
+            <div
+              onClick={() => {
+                new Promise((resolve, reject) => {
+                  setSign(!sign);
+  
+                  resolve();
+                }).then(() => numInput.current.focus());
+              }}
+              className='header-sing'
+            >
+              Войти
+            </div>
+          )}
+          {exit && (
+            <p onClick={() => setExit(false)} className='header-sign-out'>
+              Выйти
+            </p>
+          )}
+          <Clock />
+       </div>
       </div>
       <AnimatePresence>
         {sign && (

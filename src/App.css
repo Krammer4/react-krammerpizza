@@ -1,3 +1,6 @@
+
+
+
 .App {
   height: 100vh;
 }
@@ -66,6 +69,21 @@
 .header-logo {
   cursor: pointer;
   max-width: 250px;
+}
+
+.clock{
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 20px;
+  background-color: #ff6900;
+  color: white;
+  cursor: default
+}
+.contacts-review-text{
+  font-family: 'Comfortaa';
+  padding: 0;
+  margin: 0;
 }
 
 .delivery {

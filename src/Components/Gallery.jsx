@@ -45,7 +45,9 @@ export const Gallery = () => {
       ];
     
       return (
-        <>
+        <div style={{
+          marginBottom: "50px"
+        }}>
         <p className='contacts-point' style={{marginBottom: 20}}>Галлерея</p>
           <div className="gallery-container">
             <Slider {...settings}>
@@ -56,6 +58,6 @@ export const Gallery = () => {
               ))}
             </Slider>
           </div>
-        </>
+        </div>
       );
 }
