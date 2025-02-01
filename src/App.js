@@ -780,7 +780,7 @@ function App() {
                 <NavLink
                   activeClassName="navbar-link active"
                   className="navbar-link"
-                  to="/react-krammerpizza"
+                  to="/"
                 >
                   Главная
                 </NavLink>
