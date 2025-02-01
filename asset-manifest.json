@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-krammerpizza/static/css/main.2b92666e.css",
-    "main.js": "/react-krammerpizza/static/js/main.f62a3e97.js",
+    "main.js": "/react-krammerpizza/static/js/main.3dafe53c.js",
     "static/js/787.07ee01be.chunk.js": "/react-krammerpizza/static/js/787.07ee01be.chunk.js",
     "static/media/slider5.jpg": "/react-krammerpizza/static/media/slider5.06bb9ac47fca4e4729b8.jpg",
     "static/media/slider2.jpg": "/react-krammerpizza/static/media/slider2.07e3ba0f9891ea253605.jpg",
@@ -53,11 +53,11 @@
     "static/media/slick.woff": "/react-krammerpizza/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-krammerpizza/index.html",
     "main.2b92666e.css.map": "/react-krammerpizza/static/css/main.2b92666e.css.map",
-    "main.f62a3e97.js.map": "/react-krammerpizza/static/js/main.f62a3e97.js.map",
+    "main.3dafe53c.js.map": "/react-krammerpizza/static/js/main.3dafe53c.js.map",
     "787.07ee01be.chunk.js.map": "/react-krammerpizza/static/js/787.07ee01be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b92666e.css",
-    "static/js/main.f62a3e97.js"
+    "static/js/main.3dafe53c.js"
   ]
 }
