@@ -215,7 +215,6 @@ export const Header = ({
                     Подарим подарок на день рождения, сохраним адрес доставки,
                     расскажем об акциях и сделаем скидку 10% на первый заказ!
                   </p>
-                  <p className="sign-phone-text">Номер телефона</p>
                   <input
                     ref={numInput}
                     className="sign-phone-number"
